@@ -9,6 +9,7 @@ Gulp plugin for the Jest test library
 $ npm install gulp-jest --save-dev`
 ```
 
+
 ## Usage
 
 ``` javascript
@@ -36,6 +37,7 @@ gulp.task('jest', function () {
 
 ```
 
+
 ## API
 
 ### jest(options)
@@ -48,4 +50,3 @@ as per [Jest config](http://facebook.github.io/jest/docs/api.html#config-options
 ## License
 
 MIT © [Dominic Barker](http://www.dombarker.co.uk)
-
