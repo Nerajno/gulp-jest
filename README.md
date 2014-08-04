@@ -44,3 +44,8 @@ gulp.task('jest', function () {
 
 as per [Jest config](http://facebook.github.io/jest/docs/api.html#config-options)
 
+
+## License
+
+MIT © [Dominic Barker](http://www.dombarker.co.uk)
+
