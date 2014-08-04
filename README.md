@@ -1,15 +1,18 @@
-#gulp-jest
+# [gulp](http://gulpjs.com)-jest
 
-Gulp plugin for the Jest test lib
+Gulp plugin for the Jest test library 
 
 
-###Installation
+## Installation
 
-`npm install gulp-jest --save-dev`
+``` sh
+$ npm install gulp-jest --save-dev`
+```
 
-### Usage
+## Usage
 
 ``` javascript
+var jest = require('gulp-jest');
 
 gulp.task('jest', function () {
     return gulp.src('client/js/app.js').pipe(jest({
@@ -32,4 +35,12 @@ gulp.task('jest', function () {
 });
 
 ```
+
+## API
+
+### jest(options)
+
+#### options
+
+as per [Jest config](http://facebook.github.io/jest/docs/api.html#config-options)
 
