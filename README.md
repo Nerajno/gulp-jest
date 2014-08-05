@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Dakuan/gulp-jest.svg?branch=master)](https://travis-ci.org/Dakuan/gulp-jest)
+
 # [gulp](http://gulpjs.com)-jest
 
 Gulp plugin for the Jest test library 
