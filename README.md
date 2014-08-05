@@ -7,8 +7,12 @@ Gulp plugin for the Jest test library
 
 ## Installation
 
-``` sh
-$ npm install gulp-jest --save-dev`
+As this plugin isn't quite ready it's not been published to NPM, so we need to install from github.
+
+Add to `package.json`
+
+``` json
+"gulp-jest": "git+https://github.com/Dakuan/gulp-jest"
 ```
 
 
