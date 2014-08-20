@@ -4,9 +4,10 @@ var jest = require('jest-cli'),
     gutil = require('gulp-util'),
     through = require('through2');
 
-module.exports = function (options) {
+module.exports = function (options) {    
     options = options || {};
     return through.obj(function (file, enc, cb) {
+        options.rootDir = options.rootDir || file.path;
         try {
             jest.runCLI({
                 config: options
