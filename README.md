@@ -7,13 +7,13 @@ Gulp plugin for the Jest test library
 
 ## Installation
 
-``` bash
+```bash
 $ npm install gulp-jest
 ```
 
 ## Usage
 
-``` javascript
+```javascript
 var jest = require('gulp-jest');
 
 gulp.task('jest', function () {

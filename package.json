@@ -1,7 +1,7 @@
 {
   "name": "gulp-jest",
-  "version": "0.2.0",
-  "description": "gulp-jest =========",
+  "version": "0.2.1",
+  "description": "Gulp plugin for running your Jest tests",
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js -t 10000"
