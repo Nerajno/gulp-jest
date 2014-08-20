@@ -7,14 +7,9 @@ Gulp plugin for the Jest test library
 
 ## Installation
 
-As this plugin isn't quite ready it's not been published to NPM, so we need to install from github.
-
-Add to `package.json`
-
-``` json
-"gulp-jest": "git+https://github.com/Dakuan/gulp-jest"
+``` bash
+$ npm install gulp-jest
 ```
-
 
 ## Usage
 
@@ -22,8 +17,7 @@ Add to `package.json`
 var jest = require('gulp-jest');
 
 gulp.task('jest', function () {
-    return gulp.src('client/js/app.js').pipe(jest({
-        rootDir: __dirname,
+    return gulp.src('__tests__').pipe(jest({
         scriptPreprocessor: "./spec/support/preprocessor.js",
         unmockedModulePathPatterns: [
             "node_modules/react"
