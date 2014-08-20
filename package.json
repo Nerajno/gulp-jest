@@ -1,47 +1,48 @@
 {
   "name": "gulp-jest",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "gulp-jest =========",
   "main": "index.js",
   "scripts": {
-      "test": "mocha test.js -t 10000"
+    "test": "mocha test.js -t 10000"
   },
   "repository": {
-      "type": "git",
-      "url": "git://github.com/Dakuan/gulp-jest.git"
+    "type": "git",
+    "url": "git://github.com/Dakuan/gulp-jest.git"
   },
   "author": {
-      "name": "Dominic Barker",
-      "email": "dom.barker808@gmail.com",
-      "url": "http://www.dombarker.co.uk"
+    "name": "Dominic Barker",
+    "email": "dom.barker808@gmail.com",
+    "url": "http://www.dombarker.co.uk"
   },
   "license": "MIT",
   "bugs": {
-      "url": "https://github.com/Dakuan/gulp-jest/issues"
+    "url": "https://github.com/Dakuan/gulp-jest/issues"
   },
   "homepage": "https://github.com/Dakuan/gulp-jest",
   "dependencies": {
-      "jest-cli": "^0.1.18",
-      "gulp-util": "^3.0.0",
-      "through2": "^0.5.1",
-      "react-tools": "^0.11.1"
+    "jest-cli": "^0.1.18",
+    "gulp-util": "^3.0.0",
+    "through2": "^0.5.1",
+    "react-tools": "^0.11.1"
   },
   "devDependencies": {
-      "assert": "^1.1.1",
-      "mocha": "^1.21.3"
+    "assert": "^1.1.1",
+    "mocha": "^1.21.3",
+    "gulp": "^3.8.7"
   },
   "keywords": [
-      "gulpplugin",
-      "jest",
-      "test",
-      "testing",
-      "unit",
-      "framework",
-      "runner",
-      "tdd",
-      "bdd",
-      "qunit",
-      "spec",
-      "tap"
+    "gulpplugin",
+    "jest",
+    "test",
+    "testing",
+    "unit",
+    "framework",
+    "runner",
+    "tdd",
+    "bdd",
+    "qunit",
+    "spec",
+    "tap"
   ]
 }
