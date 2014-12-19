@@ -13,8 +13,9 @@ module.exports = function (options) {
         }, options.rootDir, function (success) {
             if(!success) {
                 cb(new gutil.PluginError('gulp-jest', { message: "Tests Failed" }));
+            } else {
+                cb();
             }
-            cb();
         }.bind(this));
     });
 };
