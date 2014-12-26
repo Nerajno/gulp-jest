@@ -4,7 +4,7 @@
   "description": "Gulp plugin for running your Jest tests",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js -t 10000"
+    "test": "mocha test.js -t 10000 --harmony"
   },
   "repository": {
     "type": "git",
