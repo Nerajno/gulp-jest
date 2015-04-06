@@ -57,5 +57,5 @@ it('should handle multiple files passed', function(cb) {
     setTimeout(function() {
       assert.equal(numberOfOccurences, 2);
       cb();
-    }, 3000);
+    }, 7000);
 });
