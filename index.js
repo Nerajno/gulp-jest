@@ -7,10 +7,15 @@ var jest = require('jest-cli'),
 module.exports = function (options) {
     options = options || {};
     return through.obj(function (file, enc, cb) {
-        options.rootDir = options.rootDir || file.path;
-        jest.runCLI({
-            config: options
-        }, options.rootDir, function (success) {
+        var args = {};
+        if(file.isDirectory()) {
+          options.rootDir = options.rootDir || file.path;
+        } else {
+          options.rootDir = options.rootDir;
+          args._ = [file.path];
+        }
+        args.config = options;
+        jest.runCLI(args, options.rootDir, function (success) {
             if(!success) {
                 cb(new gutil.PluginError('gulp-jest', { message: "Tests Failed" }));
             } else {
