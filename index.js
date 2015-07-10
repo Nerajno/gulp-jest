@@ -6,8 +6,8 @@ var jest = require('jest-cli'),
 
 module.exports = function (options, cliArgs) {
     options = options || {};
-    args = cliArgs || {};
-    arg.config = options;
+    var args = cliArgs || {};
+    args.config = options;
 
     return through.obj(function (file, enc, cb) {
         options.rootDir = options.rootDir || file.path;
