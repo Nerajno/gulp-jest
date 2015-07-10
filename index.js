@@ -4,13 +4,14 @@ var jest = require('jest-cli'),
     gutil = require('gulp-util'),
     through = require('through2');
 
-module.exports = function (options) {
+module.exports = function (options, cliArgs) {
     options = options || {};
+    args = cliArgs || {};
+    arg.config = options;
+
     return through.obj(function (file, enc, cb) {
         options.rootDir = options.rootDir || file.path;
-        jest.runCLI({
-            config: options
-        }, options.rootDir, function (success) {
+        jest.runCLI(args, options.rootDir, function (success) {
             if(!success) {
                 cb(new gutil.PluginError('gulp-jest', { message: "Tests Failed" }));
             } else {
