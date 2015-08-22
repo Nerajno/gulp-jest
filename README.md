@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Dakuan/gulp-jest.svg?branch=master)](https://travis-ci.org/Dakuan/gulp-jest)
 
-# [gulp](http://gulpjs.com)-jest
+# gulp-jest
 
 Gulp plugin for the Jest test library 
 
@@ -17,7 +17,7 @@ $ npm install gulp-jest
 var jest = require('gulp-jest');
 
 gulp.task('jest', function () {
-    return gulp.src('__tests__').pipe(jest({
+    return gulp.src('path/to/your/code/**/__tests__').pipe(jest({
         scriptPreprocessor: "./spec/support/preprocessor.js",
         unmockedModulePathPatterns: [
             "node_modules/react"
