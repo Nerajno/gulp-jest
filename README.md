@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/mas0061/gulp-jest.svg?branch=master)](https://travis-ci.org/mas0061/gulp-jest)
-
 # [gulp](http://gulpjs.com)-jest
 
 Gulp plugin for the Jest test library
