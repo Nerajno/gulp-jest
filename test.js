@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var gulp = require('gulp')
+var gulp = require('gulp');
 var gutil = require('gulp-util');
 var jest = require('./index');
 var through2 = require('through2');
