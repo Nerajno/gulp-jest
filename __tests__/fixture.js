@@ -1,6 +1,6 @@
 describe('fixture', function () {
 	it('should pass', function () {
-		console.log()
+		console.log('passes');
 		expect(1 + 2).toEqual(3);
 	});
 });
