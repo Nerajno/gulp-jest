@@ -15,3 +15,5 @@ after_success:
 env:
   matrix:
   - TEST_TYPE=build
+  global:
+    secure: LnRt6yeU2Flw4XvnjAar5CYm0xEp69JE+hz4odPX61XW19SgyiKHJ2sZfpxVVgP+m54hKrM3IZcxF61hF29ypV9+TUHKmMtofSlbo8SlqmiXBMuWK4jx/D/0EFay6nT54xpv8U2bfr0VjaBNBS4ZVXpptM5UWRxIIKK3bh/tdek=
