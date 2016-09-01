@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/Dakuan/gulp-jest.svg?branch=master)](https://travis-ci.org/Dakuan/gulp-jest)
-
 # [gulp](http://gulpjs.com)-jest
 
 Gulp plugin for the Jest test library
@@ -17,15 +15,16 @@ var jest = require('gulp-jest');
 
 gulp.task('jest', function () {
     return gulp.src('__tests__').pipe(jest({
-      "preprocessorIgnorePatterns": [
-        "<rootDir>/dist/", "<rootDir>/node_modules/"
-      ],
-      "automock": false
+      config: {
+        "preprocessorIgnorePatterns": [
+          "<rootDir>/dist/", "<rootDir>/node_modules/"
+        ],
+        "automock": false
+      }
     }));
 });
 
 ```
-
 
 ## API
 
@@ -34,7 +33,6 @@ gulp.task('jest', function () {
 #### options
 
 as per [Jest config](http://facebook.github.io/jest/docs/api.html#config-options)
-
 
 ## License
 
