@@ -2,8 +2,7 @@
 
 # [gulp](http://gulpjs.com)-jest
 
-Gulp plugin for the Jest test library 
-
+Gulp plugin for the Jest test library
 
 ## Installation
 
@@ -18,20 +17,10 @@ var jest = require('gulp-jest');
 
 gulp.task('jest', function () {
     return gulp.src('__tests__').pipe(jest({
-        scriptPreprocessor: "./spec/support/preprocessor.js",
-        unmockedModulePathPatterns: [
-            "node_modules/react"
-        ],
-        testDirectoryName: "spec",
-        testPathIgnorePatterns: [
-            "node_modules",
-            "spec/support"
-        ],
-        moduleFileExtensions: [
-            "js",
-            "json",
-            "react"
-        ]
+      "preprocessorIgnorePatterns": [
+        "<rootDir>/dist/", "<rootDir>/node_modules/"
+      ],
+      "automock": false
     }));
 });
 
