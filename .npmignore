@@ -1,5 +1,8 @@
 src
 __tests__
+fixture-fail
+fixture-pass
+coverage
 .babelrc
 .gitignore
 .editorconfig
