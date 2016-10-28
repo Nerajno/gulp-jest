@@ -1,6 +1,6 @@
 {
   "name": "gulp-jest",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "Gulp plugin for running your Jest tests",
   "main": "lib/index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/alansouzati/gulp-jest",
   "dependencies": {
-    "jest-cli": "^15.0.0",
+    "jest-cli": "^16.0.0",
     "gulp-util": "^3.0.0",
     "through2": "^2.0.1"
   },
