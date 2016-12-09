@@ -4,11 +4,11 @@ import through2 from 'through2';
 
 export default (options = {}) => {
   return through2.obj((file, enc, cb) => {
-    options = Object.assign({
-      config: {
+    options = Object.assign({}, options, {
+      config: Object.assign({
         rootDir: file ? file.path : undefined
-      }
-    }, options);
+      }, options.config)
+    });
 
     jest.runCLI(options, options.config.rootDir, (result) => {
       if(result.numFailedTests) {
