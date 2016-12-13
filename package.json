@@ -29,13 +29,13 @@
   },
   "homepage": "https://github.com/alansouzati/gulp-jest",
   "dependencies": {
-    "jest-cli": "^16.0.0",
+    "jest-cli": "^17.0.0",
     "gulp-util": "^3.0.0",
     "through2": "^2.0.1"
   },
   "devDependencies": {
-    "babel-core": "^6.1.18",
-    "babel-jest": "^15.0.0",
+    "babel-cli": "^6.18.0",
+    "babel-jest": "^17.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.3.13",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
