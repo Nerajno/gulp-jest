@@ -15,7 +15,7 @@ $ npm install gulp-jest
 ## Usage
 
 ```javascript
-var jest = require('gulp-jest');
+var jest = require('gulp-jest').default;
 
 gulp.task('jest', function () {
   return gulp.src('__tests__').pipe(jest({
