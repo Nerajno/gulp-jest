@@ -30,13 +30,29 @@ gulp.task('jest', function () {
 
 ```
 
+## `process.env.NODE_ENV`
+
+Unlike the `jest` CLI tool, `gulp-jest` does not automatically set `process.env.NODE_ENV` 
+to be `test`. If you are using Webpack or Babel, you may need to manually set `process.env.NODE_ENV`
+prior to running the task itself.
+
+```
+gulp.task('jest', function () {
+  process.env.NODE_ENV = 'test';
+  
+  return gulp.src('__tests__').pipe(jest({
+    ...
+  }));
+});
+```
+
 ## API
 
 ### jest(options)
 
 #### options
 
-as per [Jest config](http://facebook.github.io/jest/docs/api.html#config-options)
+as per [Jest config](http://facebook.github.io/jest/docs/configuration.html)
 
 ## License
 
