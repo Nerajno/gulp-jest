@@ -10,7 +10,7 @@ export default (options = {}) => {
       }, options.config)
     });
 
-    jest.runCLI(options, options.config.rootDir, (result) => {
+    jest.runCLI(options, [options.config.rootDir], (result) => {
       if(result.numFailedTests || result.numFailedTestSuites) {
         cb(new gutil.PluginError('gulp-jest', { message: 'Tests Failed' }));
       } else {
