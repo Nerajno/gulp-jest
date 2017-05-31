@@ -19,12 +19,10 @@ var jest = require('gulp-jest').default;
 
 gulp.task('jest', function () {
   return gulp.src('__tests__').pipe(jest({
-    config: {
-      "preprocessorIgnorePatterns": [
-        "<rootDir>/dist/", "<rootDir>/node_modules/"
-      ],
-      "automock": false
-    }
+    "preprocessorIgnorePatterns": [
+      "<rootDir>/dist/", "<rootDir>/node_modules/"
+    ],
+    "automock": false
   }));
 });
 
