@@ -30,6 +30,7 @@
   "homepage": "https://github.com/alansouzati/gulp-jest",
   "dependencies": {
     "gulp-util": "^3.0.0",
+    "lodash.defaultsdeep": "^4.6.0",
     "through2": "^2.0.1"
   },
   "devDependencies": {
