@@ -4,11 +4,9 @@ import jest from '../src/index';
 it('should pass a test', (done) => {
   gulp.src('__tests__')
     .pipe(jest({
-      config: {
-        rootDir: process.cwd(),
-        testEnvironment: 'node',
-        testRegex: 'fixture-pass.*-test.js'
-      }
+      rootDir: process.cwd(),
+      testEnvironment: 'node',
+      testRegex: 'fixture-pass.*-test.js'
     }))
     .on('error', (error) => {
       fail('Test should not fail', error);
@@ -18,17 +16,21 @@ it('should pass a test', (done) => {
 });
 
 it('should fail a test', (done) => {
+  let failed = false;
   gulp.src('__tests__')
     .pipe(jest({
-      config: {
-        rootDir: process.cwd(),
-        testEnvironment: 'node',
-        testRegex: 'fixture-fail.*-test.js'
-      }
+      rootDir: process.cwd(),
+      testEnvironment: 'node',
+      testRegex: 'fixture-fail.*-test.js'
     }))
-    .on('error', () => done())
+    .on('error', () => {
+      failed = true;
+    })
     .on('finish', () => {
-      fail('Test should fail');
+      if (!failed) {
+        fail('Test should fail');
+      }
+      
       done();
     });
 });
