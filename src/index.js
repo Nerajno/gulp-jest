@@ -10,7 +10,7 @@ export default (options = {}) => {
 
     jest.runCLI(options, [options.rootDir]).then(({ results }) => {
       var hasCoverage = _ref.globalConfig.collectCoverage;
-      var hasThreshold = _ref.globalConfig .coverageThreshold || false;
+      var hasThreshold = _ref.globalConfig.coverageThreshold || false;
 
       if (results.numFailedTests || results.numFailedTestSuites) {
         cb(new _gulpUtil2.default.PluginError('gulp-jest', { message: 'Tests Failed' }));
