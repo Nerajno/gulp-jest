@@ -9,8 +9,13 @@ export default (options = {}) => {
     }, options);
 
     jest.runCLI(options, [options.rootDir]).then(({ results }) => {
-      if(results.numFailedTests || results.numFailedTestSuites) {
-        cb(new gutil.PluginError('gulp-jest', { message: 'Tests Failed' }));
+      var hasCoverage = _ref.globalConfig.collectCoverage;
+      var hasThreshold = _ref.globalConfig .coverageThreshold || false;
+
+      if (results.numFailedTests || results.numFailedTestSuites) {
+        cb(new _gulpUtil2.default.PluginError('gulp-jest', { message: 'Tests Failed' }));
+      } else if(hasCoverage && hasThreshold && !results.success) { 
+        cb(new _gulpUtil2.default.PluginError('gulp-jest', { message: 'Coverage threshold failed'}))
       } else {
         cb();
       }
