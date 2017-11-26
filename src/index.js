@@ -15,7 +15,7 @@ export default (options = {}) => {
       if (results.numFailedTests || results.numFailedTestSuites) {
         cb(new _gulpUtil2.default.PluginError('gulp-jest', { message: 'Tests Failed' }));
       } else if(hasCoverage && hasThreshold && !results.success) { 
-        cb(new _gulpUtil2.default.PluginError('gulp-jest', { message: 'Coverage threshold failed'}))
+        cb(new _gulpUtil2.default.PluginError('gulp-jest', { message: 'Coverage threshold failed'}));
       } else {
         cb();
       }
