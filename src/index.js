@@ -1,5 +1,5 @@
 import jest from 'jest-cli';
-import gutil from 'gulp-util';
+import PluginError from 'plugin-error';
 import through2 from 'through2';
 
 export default (options = {}) => {
@@ -10,7 +10,7 @@ export default (options = {}) => {
 
     jest.runCLI(options, [options.rootDir]).then(({ results }) => {
       if(results.numFailedTests || results.numFailedTestSuites) {
-        cb(new gutil.PluginError('gulp-jest', { message: 'Tests Failed' }));
+        cb(new PluginError('gulp-jest', { message: 'Tests Failed' }));
       } else {
         cb();
       }
