@@ -39,7 +39,7 @@ gulp.task('jest', function () {
   process.env.NODE_ENV = 'test';
   
   return gulp.src('__tests__').pipe(jest({
-    ...
+    config: { ... }
   }));
 });
 ```
