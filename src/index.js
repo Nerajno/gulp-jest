@@ -5,7 +5,7 @@ import through2 from 'through2';
 export default (options = {}) => {
   return through2.obj((file, enc, cb) => {
     options = Object.assign({
-      rootDir: file ? file.path : undefined
+      rootDir: file ? process.cwd() : undefined
     }, options);
 
     jest.runCLI(options, [options.rootDir]).then(({ results }) => {

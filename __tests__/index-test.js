@@ -15,6 +15,19 @@ it('should pass a test', (done) => {
     .on('finish', () => done());
 });
 
+it('should pass a test without rootDir', (done) => {
+  gulp.src('__tests__')
+    .pipe(jest({
+      testEnvironment: 'node',
+      testRegex: 'fixture-pass.*-test.js'
+    }))
+    .on('error', (error) => {
+      fail('Test should not fail', error);
+      done();
+    })
+    .on('finish', () => done());
+});
+
 it('should fail a test', (done) => {
   let failed = false;
   gulp.src('__tests__')
