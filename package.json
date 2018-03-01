@@ -1,11 +1,12 @@
 {
   "name": "gulp-jest",
-  "version": "4.0.0",
+  "version": "4.0.2",
   "description": "Gulp plugin for running your Jest tests",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib --copy-files --loose-mode",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
