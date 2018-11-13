@@ -11,6 +11,8 @@ export default (options = {}) => {
     jest.runCLI(options, [options.rootDir]).then(({ results }) => {
       if(results.numFailedTests || results.numFailedTestSuites) {
         cb(new PluginError('gulp-jest', { message: 'Tests Failed' }));
+      } else if (typeof results.success !== 'undefined' && !results.success){
+        cb(new PluginError('gulp-jest', { message: 'Tests Failed due to coverage threshold breaches' }));
       } else {
         cb();
       }
