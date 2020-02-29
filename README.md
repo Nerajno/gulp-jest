@@ -9,7 +9,7 @@ Gulp plugin for the Jest test library
 ## Installation
 
 ```bash
-$ npm install gulp-jest jest-cli
+$ npm install gulp-jest jest
 ```
 
 ## Usage

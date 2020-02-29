@@ -1,4 +1,4 @@
-import jest from 'jest-cli';
+import { runCLI } from '@jest/core';
 import PluginError from 'plugin-error';
 import through2 from 'through2';
 
@@ -8,7 +8,7 @@ export default (options = {}) => {
       rootDir: file ? process.cwd() : undefined
     }, options);
 
-    jest.runCLI(options, [options.rootDir]).then(({ results }) => {
+    runCLI(options, [options.rootDir]).then(({ results }) => {
       if(results.numFailedTests || results.numFailedTestSuites) {
         cb(new PluginError('gulp-jest', { message: 'Tests Failed' }));
       } else if (typeof results.success !== 'undefined' && !results.success){
