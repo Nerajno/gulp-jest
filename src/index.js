@@ -12,7 +12,11 @@ export default (options = {}) => {
       if(results.numFailedTests || results.numFailedTestSuites) {
         cb(new PluginError('gulp-jest', { message: 'Tests Failed' }));
       } else if (typeof results.success !== 'undefined' && !results.success){
-        cb(new PluginError('gulp-jest', { message: 'Tests Failed due to coverage threshold breaches' }));
+        if (results.snapshot && results.snapshot.failure) {
+            cb(new PluginError('gulp-jest', { message: 'Tests Failed due to coverage snapshot failure' }));
+        } else {
+            cb(new PluginError('gulp-jest', { message: 'Tests Failed due to coverage threshold breaches' }));
+        }
       } else {
         cb();
       }

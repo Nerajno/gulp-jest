@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/alansouzati/gulp-jest.svg?branch=master)](https://travis-ci.org/alansouzati/gulp-jest)
-[![Code Climate](https://codeclimate.com/github/alansouzati/gulp-jest/badges/gpa.svg)](https://codeclimate.com/github/alansouzati/gulp-jest)
-[![Test Coverage](https://codeclimate.com/github/alansouzati/gulp-jest/badges/coverage.svg)](https://codeclimate.com/github/alansouzati/gulp-jest/coverage)
+[![Build Status](https://travis-ci.org/aarontrank/gulp-jest.svg?branch=master)](https://travis-ci.org/aarontrank/gulp-jest)
+[![Code Climate](https://codeclimate.com/github/aarontrank/gulp-jest/badges/gpa.svg)](https://codeclimate.com/github/aarontrank/gulp-jest)
+[![Test Coverage](https://codeclimate.com/github/aarontrank/gulp-jest/badges/coverage.svg)](https://codeclimate.com/github/aarontrank/gulp-jest/coverage)
 
 # [gulp](http://gulpjs.com)-jest
 
