@@ -1,6 +1,6 @@
 {
   "name": "gulp-jest",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Gulp plugin for running your Jest tests",
   "main": "lib/index.js",
   "scripts": {
@@ -24,9 +24,9 @@
       "url": "https://github.com/alansouzati"
     },
     {
-        "name": "Aaron Trank",
-        "email": "aarontrank@gmail.com",
-        "url": "https://github.com/aarontrank"
+      "name": "Aaron Trank",
+      "email": "aarontrank@gmail.com",
+      "url": "https://github.com/aarontrank"
     }
   ],
   "license": "MIT",
