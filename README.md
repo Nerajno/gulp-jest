@@ -54,4 +54,4 @@ as per [Jest config](http://facebook.github.io/jest/docs/configuration.html)
 
 ## License
 
-MIT © [Dominic Barker](http://www.dombarker.co.uk)
+MIT © [Dominic Barker](http://www.dombarker.co.uk) && [Nerando Johnson](https://developingdvlpr.com/)
