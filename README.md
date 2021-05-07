@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/aarontrank/gulp-jest.svg?branch=master)](https://travis-ci.org/aarontrank/gulp-jest)
+[![Build Status](https://travis-ci.org/Nerajno/gulp-jest.svg?branch=master)](https://travis-ci.org/github/Nerajno/gulp-jest)
 [![Code Climate](https://codeclimate.com/github/aarontrank/gulp-jest/badges/gpa.svg)](https://codeclimate.com/github/aarontrank/gulp-jest)
 [![Test Coverage](https://codeclimate.com/github/aarontrank/gulp-jest/badges/coverage.svg)](https://codeclimate.com/github/aarontrank/gulp-jest/coverage)
 
